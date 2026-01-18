@@ -17,7 +17,7 @@ A high-performance payment gateway built with **Java 21** and **Redis** to ensur
 2. **Store Request/Response**: Persists the mapping of keys to transaction results.
 3. **Replay Logic**: Returns the original response for reused keys to ensure "Exactly-Once" delivery.
 4. **Concurrency Handling**: Detects simultaneous requests and returns `409 Conflict` to prevent duplicate processing.
-5. **Expiration**: Stored keys expire automatically after 24 hours.
+5. **Expiration**: Stored keys expire automatically after 24 hours (Configurable).
 ---
 
 ## How to Run
